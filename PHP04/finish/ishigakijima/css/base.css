@@ -1,0 +1,273 @@
+@charset "UTF-8";
+/* 初期仕様を切る */
+/* 本来は全タグに対して切る */
+h1, h2, h3, h4, h5, h6{
+	font-style:normal;
+	font-weight: normal;
+}
+
+a img {
+	border:0px;
+}
+
+body {
+	margin:0px;
+	padding:0px;
+	background-color:#CCC;
+	font-size:100%;
+	background-image:url(../image/kabe_maru19.gif);
+	background-repeat:repeat;
+}
+
+/* wrapper　全体を囲む */
+#wrapper {
+	margin:0px auto;
+	padding:20px 20px 0px 20px;
+	width:810px;
+	border-right:1px solid #333;
+	border-left:1px solid #333;
+	background-color:#FFF;
+	border-bottom:1px solid #333;
+}
+
+
+/* header部分 */
+#header {
+	width:810px;
+	font-weight:normal;
+	background-color:#9CF;
+}
+#header h1{　/* この設定をしないと隙間が出来てしまうのでこの設定でなくす */
+	padding:0px;
+	margin:0px;
+}
+
+#header img{
+	vertical-align:middle;
+	margin-right:10px;
+	}
+
+/* このidが入っている画像は下記の設定が入る */
+.photo {
+	margin-top:20px;
+}
+
+
+/* gnav　横のメニューの設定 */
+#gnav{
+	height:40px;
+}
+
+#gnav ul{
+	padding:0px;/*UL独自のスペースを削除*/
+	margin:10px 0px 0px 0px;
+	list-style:none; /* リストの・を消す */
+	overflow:hidden;/* 子要素のliのfloatの解除*/
+}
+
+#gnav li{
+	float:left; /* ボックスを横に並べるためにフロートをかける */
+	text-indent:100%;/* テキストで入っている文字を見えなくするための工作 */
+	white-space:nowrap;/* テキストで入っている文字を見えなくするための工作 */
+	overflow:hidden;　/* テキストで入っている文字を見えなくするための工作 */
+}
+
+/* リンク部分をブロック化しておく */
+#gnav li a {
+	display:block; /* リンク範囲をブロックに変換 */
+	width:135px;
+	height:30px;
+}
+
+
+/* リンク部分の画像 */
+#nav-spot a {
+	background: url(../image/gnav_image.jpg) no-repeat 0px 0px;/* リンク範囲の背景画像設定 背景画像の（0px 0px）の位置*/
+}
+
+#nav-play a {
+	background: url(../image/gnav_image.jpg) no-repeat -135px 0px;/* リンク範囲の背景画像設定  背景画像の（-135px 0px）の位置 */
+}
+
+#nav-tomaru a {
+	background: url(../image/gnav_image.jpg) no-repeat -270px 0px;/* リンク範囲の背景画像設定  背景画像の（-270px 0px）の位置 */	
+}
+
+#nav-trance a {
+	background: url(../image/gnav_image.jpg) no-repeat -405px 0px;/* リンク範囲の背景画像設定　背景画像の（-405px 0px）の位置 */
+}
+
+#nav-gourmet a {
+	background: url(../image/gnav_image.jpg) no-repeat -540px 0px;/* リンク範囲の背景画像設定　背景画像の（-540px 0px）の位置 */
+}
+
+#nav-contact a {
+	background: url(../image/gnav_image.jpg) no-repeat -675px 0px;/* リンク範囲の背景画像設定　背景画像の（-675px 0px）の位置 */
+}
+
+
+/* リンク部分　マウスが来たらこの画像に変える */
+#nav-spot a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat 0px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（0px -30px）に移動 */
+}
+
+#nav-play a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat -135px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（-135px -30px）に移動 */
+}
+
+#nav-tomaru a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat -270px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（-270px -30px）に移動 */
+}
+
+#nav-trance a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat -405px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（-405px -30px）に移動 */
+}
+
+#nav-gourmet a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat -540px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（-540px -30px）に移動 */
+}
+
+#nav-contact a:hover {
+	background:url(../image/gnav_image.jpg) no-repeat -675px -30px; /* マウスが上に来た時の背景画像設定　背景画像の（-675px -30px）に移動 */
+}
+
+/*sideとmainを囲む枠*/
+#container{
+	overflow:hidden;}
+
+/* side 部分の設定*/
+#side {
+	width:160px;
+	float:left;
+	margin-top:10px;
+	height:400px;
+	background-image:url(../image/side_bg.gif);
+}
+
+#side a {
+	color:#333;
+	text-decoration:none;
+}
+#side a:hover, #side a:active {
+	color:#999;
+}
+
+#side ul{
+	list-style-type:none;
+	line-height:2.5em;
+	font-size:15px;
+	}
+ 
+#side li{
+	background: url(../image/li_icon.gif) no-repeat 0px 8px;
+	padding-left:20px;}
+	
+/* main */
+#main {
+	width:630px;
+	float:left;
+	margin-top:10px;
+	margin-left:20px;
+}
+
+#main h2{
+	color:#666;
+	margin:0px 0px 10px 0px;
+	padding-left:10px;
+	height:2em;/*テキストを上下センターにしたいのでこの設定がいる*/
+	line-height:2em;/*テキストを上下センターにしたいのでこの設定がいる*/
+	border-left:10px solid #39F;
+	border-bottom:1px solid #39F;
+}
+
+#main img{
+	margin-right:1em;
+	margin-left:1em;
+}
+
+#main p{
+	font-size:14px;
+	line-height: 1.5em;
+}
+
+/* footer */
+#footer{
+	margin-top:10px;
+	width:810px;
+	font-size:12px;
+	padding-top:1em;
+	padding-bottom:1em;
+	text-align:center;
+	color:#999;
+	border-top:1px solid #AAA;
+}
+
+/* 赤文字にする場合はclassで設定する*/
+.red{
+	color:#F00;
+}
+
+
+/*  遊ぶページ */
+.play_column{
+	width:615px;
+	height:180px;
+	border:1px solid #009;
+	margin-top:10px;
+	}
+
+.play_column h3{
+	color:#00C;
+	font-size:14px;
+	font-weight:bold;
+	border-bottom:1px solid #009;
+	padding-left:10px;
+	}
+
+.play_column p{
+	padding-right:10px;
+	}
+
+/* 見るページ */
+.spot_column{
+	width:618px;
+	height:200px;
+	margin-top:10px;
+	}
+
+.spot_column h3{
+	font-weight:bold;
+	font-size:13px;
+	color:#900;
+	border-top:1px dotted #30C;
+	border-bottom:1px dotted #30C;
+	padding:5px 0px 5px 0px;
+	}
+	
+/* ページの上への部分の設定 */
+#top_page{
+	font-size:12px;
+	text-align:right;
+	clear:both;
+	}
+#top_page a {
+	color:#333;
+	text-decoration:underline;
+}
+#top_page a:hover, #top_page a:active {
+	color:#930;
+}
+
+
+/*float*/
+.f-left{
+	float:left;
+}
+
+.f-right{
+	float:right;
+}
+
+.f-clear{
+	clear:both;
+}
